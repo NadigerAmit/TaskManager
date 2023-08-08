@@ -8,17 +8,17 @@ BTW the reason for choosing SQLite as the database for the ToDo application is t
 To address the above issues  , I decided to refactor the application to achieve better efficiency and a more modular architecture. Here are the key improvements I made:
 The architecture drives like Scalability, Swift User Interaction, Flexibility are kept in mind while designing this ToDo App.
 
-##Local Cache Using HashMap:(Taskmanager.rs)
+## Local Cache Using HashMap:(Taskmanager.rs)
 To improve the response time for CRUD operations, I implemented a local cache using a HashMap. This HashMap holds the tasks in memory, allowing for quick access and manipulation without having to perform repeated database queries. As a result, the user experiences swift interactions with the application. With this the application can handle up to 100,000 tasks efficiently due to the use of in-memory HashMap for quick access. 
 Swift User Interaction: By leveraging local cache and asynchronous database operations, the application maintains quick response times, enhancing user experience.
 
-##Separate DB Thread:(dbThread.rs)
+## Separate DB Thread:(dbThread.rs)
 To offload heavy database operations from the main thread, I introduced a separate thread dedicated to database operations. When a user initiates a CRUD operation, the task is first processed in the local HashMap, ensuring rapid response times. Simultaneously, the operation is posted asynchronously to the database thread for processing, enhancing overall performance.
 
-##MVVM Architecture:(taskViewModel.rs)
+## MVVM Architecture:(taskViewModel.rs)
 I introduced the MVVM (Model-View-ViewModel) architecture to the application. This approach allowed me to clearly separate concerns and maintain a more organized codebase. The View Model acts as an interface between the main.rs and taskmanager.rs, streamlining communication and enhancing maintainability. The MVVM architecture promotes modularity and allows for easier maintenance and updates in the future.
 
-##UUID for Unique IDs:
+## UUID for Unique IDs:
 To maintain data integrity, I utilized UUIDs (Universally Unique Identifiers) to generate unique IDs for each task. This ensures that tasks are uniquely identifiable across the application and minimizes the risk of ID collisions.
 main.rs : Acts as UI 
 
