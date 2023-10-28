@@ -3,9 +3,9 @@ Git command to be used:
    sudo apt --fix-broken install
    sudo apt-get install libsqlite3-dev
 2. Clone the git repository
-   git clone https://github.com/NadigerAmit/TaskManager.git
-3. Run the application
-   cargo run 
+    git clone https://github.com/NadigerAmit/TaskManager.git
+4. Run the application
+cargo run 
 
 # Todo app 
 
