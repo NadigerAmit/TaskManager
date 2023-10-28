@@ -2,9 +2,9 @@ Git command to be used:
 1. Install SQLite3 Development Library:
    sudo apt --fix-broken install
    sudo apt-get install libsqlite3-dev
-2. Clone the git repository
+2. Clone the git repository :
     git clone https://github.com/NadigerAmit/TaskManager.git
-4. Run the application
+4. Run the application :
 cargo run 
 
 # Todo app 
