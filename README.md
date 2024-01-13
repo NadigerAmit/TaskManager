@@ -1,4 +1,5 @@
 **Functional Requirements**
+
 The application should allow users to effectively manage their tasks, and include these minimum functionalities:
 
 Users should be able to perform CRUD operations: Add, Delete, Update, and List all tasks.
@@ -7,7 +8,9 @@ Ensure that the task list is persistent on the disk, maintaining user data even 
 The application should support undo and redo operations. For instance, if a user marks a task as "Done," they should have the ability to undo this action.
 Users should be able to search for their tasks by text or date.
 You're encouraged to think creatively and implement any additional features that might improve the application. These could include, but are not limited to, task sorting, task categorization, or setting task due dates.
+
 **Technical Requirements**
+
 For the application implementation, please adhere to the following specifications:
 
 The application must be developed using Rust programming language.
